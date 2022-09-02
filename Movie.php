@@ -29,6 +29,14 @@ class Movie {
     public function getVote(){
         return $this->vote; 
     }
+
+    public function checkVote(){
+        if($this->vote == null){
+            echo "senza voto";
+        } else {
+            echo $this->vote;
+        }
+    }
 }
 
 

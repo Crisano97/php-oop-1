@@ -31,12 +31,7 @@
             </span>
             <br>
             <span>VOTE:
-                <?php if($film->getVote() == null){
-                     echo "senza voto";
-                     } else {
-                        echo $film->getVote();
-                     }
-                     ?>
+                <?php echo $film->checkVote();?>
             </span>
         <?php } ?> 
         </div>

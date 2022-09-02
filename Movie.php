@@ -22,7 +22,9 @@ class Movie {
         return $this->director;
     }
     public function setVote($_vote){
-        $this->vote = $_vote; 
+        if($_vote >=0 && $_vote <=5){
+            $this->vote = $_vote; 
+        } 
     }
     public function getVote(){
         return $this->vote; 

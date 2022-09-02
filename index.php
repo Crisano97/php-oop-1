@@ -3,6 +3,8 @@
     $films = [];
     $films[] = new Movie("Shutter Island","Rachel Salado, paziente del manicomio criminale sull'isola di Shutter, scompare all'improvviso. L'agente federale Teddy Daniels, affiancato dall'ufficiale Chuck Aule, deve indagare per risolvere il mistero.","Martin Scorsese");
     $films[] = new Movie("Inception","Dom Cobb possiede una qualifica speciale: è in grado di inserirsi nei sogni altrui per prelevare i segreti nascosti nel più profondo del subconscio. Viene contattato da Saito, un potentissimo industriale giapponese.","Christopher Nolan");
+    $films[0]->setVote(5);
+    
 ?>
 
 <!DOCTYPE html>
@@ -25,6 +27,10 @@
             </p>
             <span>
                 <?php echo $film->getDirector();?>
+            </span>
+            <br>
+            <span>VOTE:
+                <?php echo $film->getVote();?>
             </span>
         <?php } ?> 
         </div>
